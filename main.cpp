@@ -7,23 +7,19 @@ using namespace std;
 
 int main() {
 
-    Sparse ms1(2,10,10); //(NoZeroElements,filas,columnas)
-    //Sparse ms2(3,3,3);
+    Sparse ms1(2,3,5); //(NoZeroElements,filas,columnas)
+    Sparse ms2(2,5,3);
 
     cin >> ms1;
-    //cin >> ms2;
+    cin >> ms2;
 
-    //Sparse suma = ms1+ms2;
+    //cout << "\n\n" << ms1 << endl;
 
+    cout << "\n\n";
 
-    cout << "\n\n" << ms1 << endl;
-    //cout << "ms2\n" << ms2 << endl;
-    //cout << "Suma\n" << suma << endl;
+    Sparse ms3 = ms1*ms2;
 
-
-
-
-
+    cout << ms3 << endl;
 
 
 

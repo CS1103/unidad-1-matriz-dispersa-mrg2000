@@ -34,13 +34,9 @@ public:
 
     //Sobrecargar operadores para realizar operaciones
     Sparse operator+(Sparse &matriz);
-    Sparse operator*(Sparse &matriz);
-    Sparse MultiEscalar(Sparse &matriz);
+    Sparse operator*(Sparse &matrizAMultiplicar);
+    Sparse operator*(TipoNumerico escalar);
     Sparse Transpos();
-
-
-
-
 
 
 };
